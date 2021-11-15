@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: underline;
+    font-family: Stalemate;
+}
+p{
+    font-family: Balsamiq Sans;
+}
+/* header */
+
+header{
+    min-height: 25vh;
+    background-color: #3F5C6D;
+}
+header .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo{
+    border-radius: 50%;
+    margin-top: 4px;
+    border: 3px solid white;
+}
+header h1{
+    position: relative;
+    left: -2rem;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: Are You Serious;
+    letter-spacing: 2px;
+}
+header .header-details{
+    font-size: 1.2rem;
+    color: #fff9;
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+/* navigation menu */
+nav{
+    position: sticky;
+    top: -1px;
+}
+nav ul{
+    min-height: 3em;
+    display: flex;
+    background-color:#6B9CB9 ;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: .9rem;
+    transition: .3s;
+}
+nav ul li a:hover{
+    background:#3F5C6D ;
+}
+/* section */
+section{
+    background: rgba(129, 188, 223, .4);
+    display: flex;
+    padding: 1.5rem;
+    letter-spacing: 1px;
+}
+section .sec-right img{
+    border-radius: 1rem;
+    box-shadow: 0 9px 20px  black;
+}
+
+/* section 2 */
+.section2{
+    flex-direction: row-reverse;
+}
+.section2 .sec-left{
+    padding-left: 1.5rem;
+}
+
+/* section 4 */
+.section4{
+    background-image: url(//unsplash.it/1100/700);
+    min-height: 50vh;
+    background-blend-mode: multiply;
+}
+.section4 h3{
+    display: flex;
+    align-items: center;
+    background:rgba(107, 156, 185, .5);
+    font-size: 5rem;
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-family: Bebas Neue;
+    text-align: center;
+    text-shadow: 3px 3px 7px #6B9CB9 ;
+    padding: 0em .5em;
+}
+
+/* section5 */
+.section5{
+    justify-content: center;
+}
+.section-col{
+    margin: auto;
+    text-align: justify;
+    padding: .5rem;
+    margin: .8em;
+    background: #6B9CB9;
+    border-radius: 1em;
+    box-shadow: 5px 5px 7px #6B9CB9;
+}
+.section-col img{
+    width: 100%;
+    border-radius:  .7em .7em 0 0;
+}
+.section-col h4{
+    margin-top: 9px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #131C21;
+    min-height: 40vh;
+    color: gray;
+    text-align: center;
+}
+footer .footer-left, footer .footer-right{
+    width: 50%;
+    margin: 1rem;
+}
+footer .footer-left .input{
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-left .input input, footer .footer-left .input button{
+
+    background: transparent;
+    font-size: 1rem;
+    color: gray;
+    outline: none;
+    border:2px solid gray;
+    padding: .4em;
+}
+footer .footer-left .input input{
+    border-radius: 9px 9px 0 0;
+}
+footer .footer-left .input input:hover + footer .footer-left .input button {
+    border: 2px solid #6B9CB9;
+}
+footer .footer-left .input button{
+    border-radius:  0 0 9px 9px;
+    transition: .3s;
+}
+footer .footer-left .input button:hover{
+    color: black;
+    background: #6B9CB9;
+    border: 2px solid #6B9CB9;
+}
+footer .footer-left .sm-link ion-icon{
+    padding: .2em;
+    font-size:2rem ;
+    transition: .3s;
+}
+footer .footer-left .sm-link ion-icon:hover{
+    color: #6B9CB9;
+}
+
+.copyright{
+    margin: 1em;
+    color: grey;
+    text-decoration: underline;
+    text-decoration-color: #3F5C6D;
+}

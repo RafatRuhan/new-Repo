@@ -1,0 +1,128 @@
+@media screen and (max-width: 768px) {
+  body {
+    nav {
+      .logo {
+        img {
+          transform: scale(0.8);
+        }
+      }
+      ul {
+        padding-right: 0em;
+        height: 90vh;
+        width: 50vw;
+        position: absolute;
+        right: 0;
+        top: 4em;
+        bottom: 0px;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(109, 145, 227, 0.9),
+          rgba(191, 62, 167, 0.8)
+        );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+        li {
+          opacity: 0;
+        }
+      }
+      .burger {
+        display: block;
+      }
+    }
+    header {
+      height: clamp(480px, 100vh, 1000px);
+      padding-left: 10vw;
+      padding-right: 10vw;
+      &::before {
+        height: clamp(480px, 100vh, 1000px);
+      }
+      h4 {
+        font-size: 2em;
+      }
+      h1 {
+        font-size: 5em;
+        letter-spacing: 5px;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        max-width: 80vw;
+        font-size: 1em;
+      }
+      button {
+        font-size: 1em;
+      }
+    }
+    .about-me {
+      width: 95vw;
+      flex-direction: column;
+      .my-data {
+        h2 {
+          &::before {
+            width: 50%;
+          }
+        }
+        p {
+          padding-right: 10px;
+        }
+        .company-list {
+          ul {
+            margin-left: 120px;
+          }
+        }
+      }
+      .my-img {
+        text-align: center;
+        margin: 40px auto;
+      }
+    }
+    .experience {
+        height: clamp(400px, 50vh, 100vh );
+      width: 95vw;
+      .slideshow-container {
+        .exp-title {
+          .exp {
+            font-size: 1.3rem;
+          }
+        }
+        .slideshow-content {
+          .mySlides {
+            h3 {
+              font-size: 1.2rem;
+            }
+            span {
+              font-size: 0.6rem;
+            }
+            ul {
+              li {
+                font-size: 1em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .service {
+      .grid-container {
+        grid-row-gap: 25px;
+        grid-column-gap: 25px;
+        p {
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 19px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}
+
+// navigation-menu-active
+.nav-active {
+  transform: translateX(0%);
+}

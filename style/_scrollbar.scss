@@ -1,0 +1,49 @@
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar:horizontal {
+    width: 9px;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      to bottom,
+      rgba(109, 145, 227, 0.7),
+      rgba(191, 62, 167, 0.6) ,rgba(109, 145, 227, 0.7),
+      rgba(191, 62, 167, 0.6), rgba(109, 145, 227, 0.7),
+      rgba(191, 62, 167, 0.6)
+    );
+    border-radius: 9px;
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+      background: linear-gradient(
+        to right,
+        rgba(109, 145, 227, 0.7),
+        rgba(191, 62, 167, 0.6) ,rgba(109, 145, 227, 0.7),
+        rgba(191, 62, 167, 0.6), rgba(109, 145, 227, 0.7),
+        rgba(191, 62, 167, 0.6)
+      );
+      border-radius: 9px;
+    }
+    ::-webkit-scrollbar-thumb:horizontal:hover {
+      background: linear-gradient(
+          to right,
+          rgb(57, 104, 213),
+          rgb(196, 52, 170),rgb(57, 104, 213),
+          rgb(196, 52, 170) ,rgb(57, 104, 213),
+          rgb(196, 52, 170)
+        );
+      border-radius: 9px;
+    }
+  ::-webkit-scrollbar-thumb:hover{
+      background: linear-gradient(
+          to bottom,
+          rgba(57, 104, 213, 0.864),
+          rgba(196, 52, 170, 0.83),rgba(57, 104, 213, 0.803),
+          rgba(196, 52, 170, 0.85) ,rgba(57, 104, 213, 0.816),
+          rgba(196, 52, 170, 0.816)
+        );
+  }
+  ::-webkit-scrollbar-track-piece {
+    background: #d65cc663;
+  }

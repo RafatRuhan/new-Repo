@@ -1,0 +1,119 @@
+
+
+
+// check-my-course!
+@keyframes button-gradient {
+    0% {
+        background-position: 0;
+    }
+
+    100%{
+        background-position: -300%;
+    }
+}
+// buzz out
+@keyframes buzz-out {
+    10% {
+      transform: translateX(3px) rotate(2deg);
+      
+    }
+    20% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+//   ripple out
+  @keyframes ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      border-color: #ffffff;
+      opacity: 0;
+    }
+  }
+
+// (mobile device)-nav-links-fade
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+// hamburger to cross 
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+ }
+ .toggle .line2{
+     transform: translateX(100%);
+     opacity: 0;
+ }
+ .toggle .line3{
+     transform: rotate(45deg) translate(-5px, -6px);
+ } 
+
+
+
+ /* experience - Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+//  experience - title animation 
+  .active{
+    background-color: rgb(206, 68, 181) ;
+    box-shadow: 0 0 6px royalblue;
+    &::before{
+        bottom: 0;
+        left:-13px;
+        top: 0;
+        content: "";
+        width: 5px;
+        height:100% ;
+        position: absolute;
+        background-color:rgb(206, 68, 181) ;
+        border: 1px solid royalblue;
+        border-radius: 20%;
+      }
+  }
